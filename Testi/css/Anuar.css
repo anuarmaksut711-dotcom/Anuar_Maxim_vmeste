@@ -1,0 +1,19 @@
+/* Small visual corrections; columns and responsive behaviour stay in HTML classes. */
+.pixel-hero-background { background: linear-gradient(0deg, #000, transparent), url("../assets/pixel/slide-1.png") center / cover; }
+.pixel-cursor { color: #a9a4d0; }
+.pixel-photo { background-position: center; background-size: cover; }
+/* Original purple equipment panels, simplified to one reusable rule. */
+.pixel-device-card { background: linear-gradient(145deg, #36314f, #08060e); }
+/* Bootstrap table variables preserve the original black-and-purple pricing palette. */
+.pixel-pricing-table { --bs-table-bg: #000; --bs-table-color: #fff; }
+.pixel-pricing-table thead { --bs-table-bg: #36314f; }
+.pixel-pricing-table tbody tr:first-child { --bs-table-bg: #51476f; }
+.pixel-pricing-table tbody td { border-left: 1px solid #36314f; }
+/* The dark theme otherwise turns carousel arrows black on dark photographs. */
+.carousel-control-prev-icon, .carousel-control-next-icon { filter: none; }
+.pixel-slide-image-1, .pixel-gallery-image-1 { background-image: url("../assets/pixel/slide-1.png"); }
+.pixel-slide-image-2, .pixel-gallery-image-2 { background-image: url("../assets/pixel/slide-2.png"); }
+.pixel-slide-image-3, .pixel-gallery-image-3 { background-image: url("../assets/pixel/slide-3.png"); }
+.pixel-slide-image-4, .pixel-gallery-image-4 { background-image: url("../assets/pixel/slide-4.png"); }
+.pixel-slide-image-5, .pixel-gallery-image-5 { background-image: url("../assets/pixel/slide-5.png"); }
+.pixel-slide-image-6, .pixel-gallery-image-6 { background-image: url("../assets/pixel/slide-6.png"); }

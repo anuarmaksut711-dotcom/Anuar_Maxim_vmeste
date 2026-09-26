@@ -1,0 +1,22 @@
+/* Brand fonts and colours. Bootstrap supplies layout, spacing and typography sizes. */
+@font-face { font-family: "Teko Local"; src: url("../assets/pixel/teko-400.ttf") format("truetype"); font-weight: 400; font-display: swap; }
+@font-face { font-family: "Share Tech Mono Local"; src: url("../assets/pixel/share-tech-mono.ttf") format("truetype"); font-weight: 400; font-display: swap; }
+:root, [data-bs-theme="dark"] {
+  --bs-body-font-family: "Share Tech Mono Local", monospace;
+  --bs-body-bg: #000;
+  --bs-body-color: #fff;
+  --bs-tertiary-bg: #171320;
+  --bs-border-color: #504760;
+  --bs-link-color-rgb: 169, 164, 208;
+  --bs-link-hover-color-rgb: 213, 209, 240;
+}
+h1, h2, h3, .pixel-brand { font-family: "Teko Local", sans-serif; }
+/* Only Bootstrap's button colour variables are overridden for the original purple palette. */
+.btn-primary {
+  --bs-btn-bg: #36314f;
+  --bs-btn-border-color: #a9a4d0;
+  --bs-btn-hover-bg: #51476f;
+  --bs-btn-hover-border-color: #d5d1f0;
+  --bs-btn-active-bg: #51476f;
+  --bs-btn-active-border-color: #d5d1f0;
+}
