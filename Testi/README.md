@@ -21,6 +21,6 @@ The gallery and equipment cards use one column on phones, two at `md` (768px), a
 
 `container-fluid` provides the full-width page and footer backgrounds, while inner `container` elements keep content readable. The pages use Bootstrap spacing, grid, typography, navigation, carousel, and button classes. Local CSS is limited to fonts, brand colours, photo backgrounds, and small card/hover details; it contains no custom page-grid or breakpoint rules. The games grid has two columns on phones, three on tablets, and four on desktop. Common-room seats change from two columns on phones to four at `md`; the Duo and VIP layouts adjust to their room sizes.
 
-The **Компьютеры** and **Игры** navigation links open the two new pages. The existing contact details remain in the footer on every page, and the desktop Contact button jumps to them.
+The **Computers** and **Games** navigation links open the two new pages. The existing contact details remain in the footer on every page, and the desktop Contact button jumps to them.
 
 The website loads Bootstrap 5.3.8 CSS and its official JavaScript bundle from jsDelivr, so an internet connection is needed when opening the local files.
