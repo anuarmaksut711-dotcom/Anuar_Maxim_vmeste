@@ -11,6 +11,7 @@ Assignment 3 rebuilds the Pixel Computer Club site with Bootstrap 5.3.8. Open `i
 - `css/base.css` — local fonts and brand colour variables.
 - `css/Anuar.css` — photo backgrounds and small visual corrections.
 - `assets/pixel/` — original photos and local fonts.
+- `assets/pixel/games/` — local cover artwork for the games library; `SOURCES.md` links the public source pages.
 - `CSS-changes.md` — Assignment 2 CSS rules replaced by Bootstrap classes.
 - `screenshots/` — the overview at 375, 768, and 1440 pixels and the collapsed phone navigation.
 - `AI-log.md` — AI assistance log.

@@ -9,3 +9,4 @@
 - Local paths and fragments across all four pages resolve. The two stylesheets total 50 lines.
 - The existing responsive screenshots are present, but the 1440px image shows the old navigation and needs recapturing. Codex's browser panel blocks the local `file://` preview, so the new pages' visual layout and overflow at 375px, 768px, and desktop remain unverified here.
 - The user reviewed and requested these changes through Codex. The author remains responsible for understanding and defending the work.
+- Follow-up request: add high-resolution game cover art. Added local artwork to all 20 library cards, with descriptive alt text and source links in `assets/pixel/games/SOURCES.md`; SteamGridDB community art and official store artwork are identified there.
