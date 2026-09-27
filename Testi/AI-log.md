@@ -1,7 +1,9 @@
 # AI assistance log
 
-- The assignment brief was reviewed and applied to the existing two-page site. Existing page structure, Bootstrap layout, CSS migration notes, and four responsive screenshots were retained.
-- At the user's request, the `Birthday Parties → At Pixel Main` link was connected directly to the booking controls. The desktop Contact buttons now link to the contact footer, and the misplaced birthday-party anchor was removed from the contact block.
-- The README was updated to describe the delivered files and navigation. No new pages or custom JavaScript were introduced.
-- Both HTML pages were checked with the W3C Nu HTML Checker: zero errors; it returned only informational section/article heading suggestions.
+- The original assignment brief was applied to the existing two-page site; its Bootstrap layout, CSS migration notes, and four responsive screenshots were retained.
+- The earlier navigation pass connected the Contact buttons to the footer and made the existing phone and email details actionable.
+- The README and AI log were updated to describe the delivered files and navigation. No custom JavaScript was introduced.
+- Follow-up request: remove the top Birthday Parties and Contact Us items and add Компьютеры and Игры navigation links. Created `computers.html` with 27 seat cards across three rooms, and `games.html` with the 20 supplied titles. Shared Bootstrap navigation, footer, fonts, colours, and responsive layout were reused; compact local text marks stand in for external game logos.
+- All four pages were checked with the W3C Nu HTML Checker: zero errors. The two original pages return only informational section/article heading suggestions; the new pages return no messages.
+- Local paths and fragments across all four pages resolve. The two stylesheets total 50 lines.
 - The user reviewed and requested these changes through Codex. The author remains responsible for understanding and defending the work.

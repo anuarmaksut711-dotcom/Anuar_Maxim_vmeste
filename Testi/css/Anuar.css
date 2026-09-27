@@ -17,3 +17,12 @@
 .pixel-slide-image-4, .pixel-gallery-image-4 { background-image: url("../assets/pixel/slide-4.png"); }
 .pixel-slide-image-5, .pixel-gallery-image-5 { background-image: url("../assets/pixel/slide-5.png"); }
 .pixel-slide-image-6, .pixel-gallery-image-6 { background-image: url("../assets/pixel/slide-6.png"); }
+.pixel-seat, .pixel-game-card { transition: transform 180ms ease, box-shadow 180ms ease, border-color 180ms ease; }
+.pixel-seat:hover, .pixel-game-card:hover { transform: translateY(-3px); border-color: #a9a4d0; box-shadow: 0 0.5rem 1.5rem rgba(169, 164, 208, 0.18); }
+.pixel-seat-icon { color: #a9a4d0; font-size: 1.75rem; line-height: 1; }
+.pixel-status-dot { display: inline-block; width: 0.65rem; height: 0.65rem; flex: 0 0 auto; border-radius: 50%; background: #43d995; }
+.pixel-status-busy { background: #f05b6f; }
+.pixel-status-unavailable { background: #9297a2; }
+.pixel-game-mark { display: grid; width: 4rem; aspect-ratio: 1; place-items: center; border: 1px solid #504760; border-radius: 1rem; background: linear-gradient(145deg, #36314f, #08060e); color: #d5d1f0; font-family: "Teko Local", sans-serif; font-size: 1.6rem; font-weight: 700; line-height: 1; }
+.pixel-game-card h3 { overflow-wrap: anywhere; }
+@media (prefers-reduced-motion: reduce) { .pixel-seat, .pixel-game-card { transition: none; } }

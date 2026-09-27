@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en" data-bs-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Anuar Maksut Se - 2537">
+  <meta name="description" content="Browse games and applications listed for Pixel Computer Club computers.">
+  <title>Games and Applications — Pixel Computer Club</title>
+  <!-- Bootstrap 5.3.8 from CDN; project CSS follows Bootstrap. -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/Anuar.css">
+</head>
+<body>
+  <a class="pixel-fixed-contact btn btn-outline-light btn-sm position-fixed bottom-0 end-0 m-3 z-3 shadow d-none d-md-inline-block" href="#contact">Contact</a>
+  <!-- container-fluid keeps the page background full width; inner containers limit reading width. -->
+  <div class="pixel-page container-fluid px-0">
+    <header class="pixel-site-header navbar navbar-expand-lg border-bottom py-3 bg-black">
+      <div class="container">
+        <div class="pixel-site-branding">
+          <a class="pixel-brand navbar-brand lh-1 text-uppercase text-decoration-none fs-2" href="index.html" aria-label="Pixel Computer Club home">Pixel</a>
+        </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#primaryNavigation" aria-controls="primaryNavigation" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+        <nav class="pixel-navigation collapse navbar-collapse" aria-label="Primary navigation" id="primaryNavigation">
+          <ul class="pixel-desktop-nav-list navbar-nav ms-auto gap-lg-2 align-items-lg-center">
+            <li class="pixel-nav-item nav-item"><a class="pixel-nav-link pixel-nav-home nav-link" href="index.html" aria-label="Home">↰</a></li>
+            <li class="pixel-nav-item nav-item">
+              <div class="pixel-nav-details dropdown">
+                <button class="pixel-nav-link nav-link dropdown-toggle bg-transparent border-0" type="button" data-bs-toggle="dropdown" aria-expanded="false">About Pixel</button>
+                <div class="pixel-nav-dropdown dropdown-menu p-3 shadow">
+                  <a class="pixel-dropdown-card d-block text-decoration-none p-2 rounded text-body" href="index.html">
+                    <img src="assets/pixel/menu-organizations.jpg" alt="" class="img-fluid rounded mb-2" width="240" height="135">
+                    <div><p class="pixel-dropdown-title small mb-2 text-wrap fw-bold">About Pixel</p><p class="small mb-2 text-wrap">Our club is a welcoming place to play, practice and spend time with friends.</p><span aria-hidden="true">→</span></div>
+                  </a>
+                  <a class="pixel-dropdown-card d-block text-decoration-none p-2 rounded text-body" href="index.html#organizations">
+                    <img src="assets/pixel/menu-organizations.jpg" alt="" class="img-fluid rounded mb-2" width="240" height="135">
+                    <div><p class="pixel-dropdown-title fw-bold small mb-2 text-wrap">Pixel Gaming Community</p><p class="small mb-2 text-wrap">Meet other players, improve your skills and compete in tournaments.</p><span aria-hidden="true">→</span></div>
+                  </a>
+                  <a class="pixel-dropdown-card pixel-dropdown-card-wide d-block text-decoration-none p-2 rounded text-body" href="#contact">
+                    <div><p class="pixel-dropdown-title fw-bold small mb-2 text-wrap">Pixel Community League</p><p class="small mb-2 text-wrap">Gaming events and activities for players of every level.</p><span aria-hidden="true">→</span></div>
+                  </a>
+                </div>
+              </div>
+            </li>
+            <li class="pixel-nav-item nav-item"><a class="pixel-nav-link nav-link" href="all-locations.html">The devices and price</a></li>
+            <li class="pixel-nav-item nav-item"><a class="pixel-nav-link nav-link" href="computers.html">Компьютеры</a></li>
+            <li class="pixel-nav-item nav-item"><a class="pixel-nav-link pixel-nav-link-active nav-link active" href="games.html" aria-current="page">Игры</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="pixel-main" id="main-content">
+      <header class="pixel-hero position-relative py-5 bg-black">
+        <div class="pixel-hero-background position-absolute top-0 start-0 w-100 h-100 opacity-50"></div>
+        <div class="pixel-hero-inner container position-relative py-5">
+          <div class="row justify-content-center"><div class="col-12 col-lg-8">
+            <h1 class="pixel-hero-title text-uppercase mb-3 display-2 fw-normal">Games and apps<span class="pixel-cursor">_</span></h1>
+            <p class="lead mb-0">A selection of games and apps listed for the computers at Pixel Main.</p>
+          </div></div>
+        </div>
+      </header>
+
+      <section class="container py-4 py-md-5" aria-labelledby="games-list-title">
+        <div class="d-flex flex-wrap justify-content-between align-items-baseline gap-2 mb-4">
+          <h2 class="display-6 text-uppercase mb-0" id="games-list-title">Games library</h2>
+          <span class="small text-body-secondary">20 titles</span>
+        </div>
+        <!-- Bootstrap card grid adapted with compact text marks instead of external logos. -->
+        <div class="pixel-game-grid row row-cols-2 row-cols-sm-3 row-cols-lg-4 g-3 g-md-4">
+          <div class="col"><article class="pixel-game-card card h-100 bg-black border-secondary rounded-4 text-center"><div class="card-body d-flex flex-column align-items-center justify-content-center gap-2 p-3"><span class="pixel-game-mark" aria-hidden="true">CS2</span><h3 class="h5 mb-0">Counter-Strike 2</h3><span class="small text-body-secondary">Shooter</span></div></article></div>
+          <div class="col"><article class="pixel-game-card card h-100 bg-black border-secondary rounded-4 text-center"><div class="card-body d-flex flex-column align-items-center justify-content-center gap-2 p-3"><span class="pixel-game-mark" aria-hidden="true">FN</span><h3 class="h5 mb-0">Fortnite</h3><span class="small text-body-secondary">Battle Royale</span></div></article></div>
+          <div class="col"><article class="pixel-game-card card h-100 bg-black border-secondary rounded-4 text-center"><div class="card-body d-flex flex-column align-items-center justify-content-center gap-2 p-3"><span class="pixel-game-mark" aria-hidden="true">MC</span><h3 class="h5 mb-0">Minecraft</h3><span class="small text-body-secondary">Sandbox</span></div></article></div>
+          <div class="col"><article class="pixel-game-card card h-100 bg-black border-secondary rounded-4 text-center"><div class="card-body d-flex flex-column align-items-center justify-content-center gap-2 p-3"><span class="pixel-game-mark" aria-hidden="true">D2</span><h3 class="h5 mb-0">Dota 2</h3><span class="small text-body-secondary">MOBA</span></div></article></div>
+          <div class="col"><article class="pixel-game-card card h-100 bg-black border-secondary rounded-4 text-center"><div class="card-body d-flex flex-column align-items-center justify-content-center gap-2 p-3"><span class="pixel-game-mark" aria-hidden="true">VAL</span><h3 class="h5 mb-0">Valorant</h3><span class="small text-body-secondary">Tactical Shooter</span></div></article></div>
+          <div class="col"><article class="pixel-game-card card h-100 bg-black border-secondary rounded-4 text-center"><div class="card-body d-flex flex-column align-items-center justify-content-center gap-2 p-3"><span class="pixel-game-mark" aria-hidden="true">V</span><h3 class="h5 mb-0">GTA V</h3><span class="small text-body-secondary">Action</span></div></article></div>
+          <div class="col"><article class="pixel-game-card card h-100 bg-black border-secondary rounded-4 text-center"><div class="card-body d-flex flex-column align-items-center justify-content-center gap-2 p-3"><span class="pixel-game-mark" aria-hidden="true">ON</span><h3 class="h5 mb-0">GTA Online</h3><span class="small text-body-secondary">Action</span></div></article></div>
+          <div class="col"><article class="pixel-game-card card h-100 bg-black border-secondary rounded-4 text-center"><div class="card-body d-flex flex-column align-items-center justify-content-center gap-2 p-3"><span class="pixel-game-mark" aria-hidden="true">PUBG</span><h3 class="h5 mb-0">PUBG</h3><span class="small text-body-secondary">Battle Royale</span></div></article></div>
+          <div class="col"><article class="pixel-game-card card h-100 bg-black border-secondary rounded-4 text-center"><div class="card-body d-flex flex-column align-items-center justify-content-center gap-2 p-3"><span class="pixel-game-mark" aria-hidden="true">APX</span><h3 class="h5 mb-0">Apex Legends</h3><span class="small text-body-secondary">Battle Royale</span></div></article></div>
+          <div class="col"><article class="pixel-game-card card h-100 bg-black border-secondary rounded-4 text-center"><div class="card-body d-flex flex-column align-items-center justify-content-center gap-2 p-3"><span class="pixel-game-mark" aria-hidden="true">LoL</span><h3 class="h5 mb-0">League of Legends</h3><span class="small text-body-secondary">MOBA</span></div></article></div>
+          <div class="col"><article class="pixel-game-card card h-100 bg-black border-secondary rounded-4 text-center"><div class="card-body d-flex flex-column align-items-center justify-content-center gap-2 p-3"><span class="pixel-game-mark" aria-hidden="true">RUST</span><h3 class="h5 mb-0">Rust</h3><span class="small text-body-secondary">Survival</span></div></article></div>
+          <div class="col"><article class="pixel-game-card card h-100 bg-black border-secondary rounded-4 text-center"><div class="card-body d-flex flex-column align-items-center justify-content-center gap-2 p-3"><span class="pixel-game-mark" aria-hidden="true">RBX</span><h3 class="h5 mb-0">Roblox</h3><span class="small text-body-secondary">Sandbox</span></div></article></div>
+          <div class="col"><article class="pixel-game-card card h-100 bg-black border-secondary rounded-4 text-center"><div class="card-body d-flex flex-column align-items-center justify-content-center gap-2 p-3"><span class="pixel-game-mark" aria-hidden="true">FC</span><h3 class="h5 mb-0">EA Sports FC</h3><span class="small text-body-secondary">Sports</span></div></article></div>
+          <div class="col"><article class="pixel-game-card card h-100 bg-black border-secondary rounded-4 text-center"><div class="card-body d-flex flex-column align-items-center justify-content-center gap-2 p-3"><span class="pixel-game-mark" aria-hidden="true">COD</span><h3 class="h5 mb-0">Call of Duty</h3><span class="small text-body-secondary">Shooter</span></div></article></div>
+          <div class="col"><article class="pixel-game-card card h-100 bg-black border-secondary rounded-4 text-center"><div class="card-body d-flex flex-column align-items-center justify-content-center gap-2 p-3"><span class="pixel-game-mark" aria-hidden="true">R6</span><h3 class="h5 mb-0">Rainbow Six Siege</h3><span class="small text-body-secondary">Tactical Shooter</span></div></article></div>
+          <div class="col"><article class="pixel-game-card card h-100 bg-black border-secondary rounded-4 text-center"><div class="card-body d-flex flex-column align-items-center justify-content-center gap-2 p-3"><span class="pixel-game-mark" aria-hidden="true">OW2</span><h3 class="h5 mb-0">Overwatch 2</h3><span class="small text-body-secondary">Hero Shooter</span></div></article></div>
+          <div class="col"><article class="pixel-game-card card h-100 bg-black border-secondary rounded-4 text-center"><div class="card-body d-flex flex-column align-items-center justify-content-center gap-2 p-3"><span class="pixel-game-mark" aria-hidden="true">RL</span><h3 class="h5 mb-0">Rocket League</h3><span class="small text-body-secondary">Sports</span></div></article></div>
+          <div class="col"><article class="pixel-game-card card h-100 bg-black border-secondary rounded-4 text-center"><div class="card-body d-flex flex-column align-items-center justify-content-center gap-2 p-3"><span class="pixel-game-mark" aria-hidden="true">WT</span><h3 class="h5 mb-0">War Thunder</h3><span class="small text-body-secondary">Combat Simulator</span></div></article></div>
+          <div class="col"><article class="pixel-game-card card h-100 bg-black border-secondary rounded-4 text-center"><div class="card-body d-flex flex-column align-items-center justify-content-center gap-2 p-3"><span class="pixel-game-mark" aria-hidden="true">ETS2</span><h3 class="h5 mb-0">Euro Truck Simulator 2</h3><span class="small text-body-secondary">Driving Simulator</span></div></article></div>
+          <div class="col"><article class="pixel-game-card card h-100 bg-black border-secondary rounded-4 text-center"><div class="card-body d-flex flex-column align-items-center justify-content-center gap-2 p-3"><span class="pixel-game-mark" aria-hidden="true">CH</span><h3 class="h5 mb-0">Google Chrome</h3><span class="small text-body-secondary">Browser</span></div></article></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="pixel-site-footer container-fluid border-top py-5 mt-5 bg-black" id="contact">
+      <div class="container"><div class="pixel-footer-inner row g-4">
+        <div class="pixel-footer-item col-12 col-md-6 col-lg-4 text-center text-md-start"><div class="pixel-footer-rule border-top mb-4" aria-hidden="true"></div><p>A next-level gaming experience at Pixel Computer Club</p><p class="pixel-footer-copyright small text-body-secondary">© 2026 Pixel Computer Club</p><p><a class="pixel-button btn btn-primary text-uppercase rounded-0" href="https://2gis.kz/astana/firm/70000001081269255" target="_blank" rel="noreferrer">Open in 2 GIS</a></p></div>
+        <div class="pixel-footer-item col-12 col-md-6 col-lg-4 text-center text-md-start"><div class="pixel-footer-rule border-top mb-4" aria-hidden="true"></div><p class="pixel-footer-location h4">Pixel Main</p><p><small>36 Mangilik El Avenue<br>Astana, 010000</small></p></div>
+        <div class="pixel-footer-item col-12 col-md-6 col-lg-4 text-center text-md-start"><div class="pixel-footer-rule border-top mb-4" aria-hidden="true"></div><a href="https://www.instagram.com/pixel.cyberclub/" target="_blank" rel="noreferrer">@instagram</a><br><p class="pixel-footer-contact text-break"><span class="pixel-footer-social-label">operates 24/7</span><br><a class="link-light text-decoration-none" href="tel:+77753513693"><span class="pixel-footer-social-label">+7‒775‒351‒36‒93</span></a><br><a class="link-light text-decoration-none" href="mailto:barmal066@gmail.com"><span class="pixel-footer-social-label">barmal066@gmail.com</span></a></p></div>
+      </div></div>
+    </footer>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
