@@ -1,28 +1,24 @@
 # Pixel Computer Club
 
-Assignment 3 continues the existing two-page Pixel Computer Club website in Astana. The original content, equipment specifications, prices, photographs and main section order are retained.
-
-## Open the website
-
-Open `index.html` directly in a browser. Follow **The devices and price** to `all-locations.html`. No installation, build, server, hosting or domain is required. An internet connection is required for Bootstrap 5.3.8 CSS and its official JavaScript bundle, loaded from jsDelivr. There is no project JavaScript.
+Assignment 3 rebuilds the existing two-page Pixel Computer Club site with Bootstrap 5.3.8. Open `index.html` locally and use the navigation to move between the club overview and equipment prices. The original pages and content are retained; no new pages, site builder, or custom JavaScript are required.
 
 ## Files
 
-- `index.html`: about the club, photo carousel, community and gallery.
-- `all-locations.html`: prices and three equipment tiers.
-- `css/base.css`: local fonts and brand colour variables.
-- `css/Anuar.css`: photo backgrounds and small decorative corrections.
-- `assets/pixel/`: original photos and local font files.
-- `CSS-changes.md`: removed CSS rules and Bootstrap replacements.
-- `screenshots/`: the about page at 375, 768 and 1440 pixels, plus the collapsed phone navigation.
-- `VALIDATION.md`: verification results.
-- `AI-log.md`: assistance requests and the work performed.
-- `REQUIREMENTS-CHECK.md`: requirement-by-requirement review and outstanding deviations.
+- `index.html` — club overview, carousel, community, gallery, and footer contacts.
+- `all-locations.html` — equipment, prices, and the booking link.
+- `css/base.css` — local fonts and brand colour variables.
+- `css/Anuar.css` — photo backgrounds and small visual corrections.
+- `assets/pixel/` — original photos and local fonts.
+- `CSS-changes.md` — Assignment 2 CSS rules replaced by Bootstrap classes.
+- `screenshots/` — the overview at 375, 768, and 1440 pixels and the collapsed phone navigation.
+- `AI-log.md` — AI assistance log.
 
 ## Responsive layout
 
-The gallery, equipment cards and footer use one column on phones, two at `md` (768px) and three at `lg` (992px). The introduction image and community paragraphs change from one to two columns at `md`. Equipment lists demonstrate a nested row inside each card's parent column. The navbar expands at `lg`; below that width its button opens and closes the navigation.
+The gallery and equipment cards use one column on phones, two at `md` (768px), and three at `lg` (992px). The introduction image and community content change from one to two columns at `md`. Equipment cards demonstrate a nested grid row. The navbar expands at `lg` and uses Bootstrap's toggler below that breakpoint. The included screenshots show the overview at all three required widths and the collapsed navigation at phone width.
 
-`container-fluid` supplies full-width page and footer backgrounds. Inner `container` elements keep content readable. Footer and pricing-note alignment changes at `md`; the floating contact link is hidden below `md`.
+`container-fluid` provides the full-width page and footer backgrounds, while inner `container` elements keep content readable. The page uses Bootstrap spacing, grid, typography, navigation, carousel, and button classes. Local CSS is limited to fonts, brand colours, photo backgrounds, and small visual corrections; it contains no custom grid or breakpoint rules.
 
-Centered `col-12 col-lg-8` wrappers keep the original compact proportions without custom width rules. The black background, local fonts and purple panels preserve the site's identity. Both custom stylesheets total 41 lines, with no custom breakpoints or layout rules.
+The **Birthday Parties → At Pixel Main** menu item opens the booking controls on the prices page. **Contact Us** and the desktop Contact button jump to the contact details at the bottom of the current page.
+
+The website loads Bootstrap 5.3.8 CSS and its official JavaScript bundle from jsDelivr, so an internet connection is needed when opening the local files.
