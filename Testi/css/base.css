@@ -20,3 +20,9 @@ h1, h2, h3, .pixel-brand { font-family: "Teko Local", sans-serif; }
   --bs-btn-active-bg: #51476f;
   --bs-btn-active-border-color: #d5d1f0;
 }
+.circle {
+  width: 120px;
+  height: 120px;
+  background: #a9a4d0;
+  border-radius: 50%;
+}
