@@ -1,30 +1,27 @@
-/* Small visual corrections; columns and responsive behaviour stay in HTML classes. */
-.pixel-hero-background { background: linear-gradient(0deg, #000, transparent), url("../assets/pixel/slide-1.png") center / cover; }
-.pixel-cursor { color: #a9a4d0; }
-.pixel-photo { background-position: center; background-size: cover; }
-/* Original purple equipment panels, simplified to one reusable rule. */
-.pixel-device-card { background: linear-gradient(145deg, #36314f, #08060e); }
-/* Bootstrap table variables preserve the original black-and-purple pricing palette. */
-.pixel-pricing-table { --bs-table-bg: #000; --bs-table-color: #fff; }
-.pixel-pricing-table thead { --bs-table-bg: #36314f; }
-.pixel-pricing-table tbody tr:first-child { --bs-table-bg: #51476f; }
-.pixel-pricing-table tbody td { border-left: 1px solid #36314f; }
-/* The dark theme otherwise turns carousel arrows black on dark photographs. */
-.carousel-control-prev-icon, .carousel-control-next-icon { filter: none; }
-.pixel-slide-image-1, .pixel-gallery-image-1 { background-image: url("../assets/pixel/slide-1.png"); }
-.pixel-slide-image-2, .pixel-gallery-image-2 { background-image: url("../assets/pixel/slide-2.png"); }
-.pixel-slide-image-3, .pixel-gallery-image-3 { background-image: url("../assets/pixel/slide-3.png"); }
-.pixel-slide-image-4, .pixel-gallery-image-4 { background-image: url("../assets/pixel/slide-4.png"); }
-.pixel-slide-image-5, .pixel-gallery-image-5 { background-image: url("../assets/pixel/slide-5.png"); }
-.pixel-slide-image-6, .pixel-gallery-image-6 { background-image: url("../assets/pixel/slide-6.png"); }
-.pixel-seat, .pixel-game-card { transition: transform 180ms ease, box-shadow 180ms ease, border-color 180ms ease; }
-.pixel-seat:hover, .pixel-game-card:hover { transform: translateY(-3px); border-color: #a9a4d0; box-shadow: 0 0.5rem 1.5rem rgba(169, 164, 208, 0.18); }
-.pixel-seat-icon { color: #a9a4d0; font-size: 1.75rem; line-height: 1; }
-.pixel-status-dot { display: inline-block; width: 0.65rem; height: 0.65rem; flex: 0 0 auto; border-radius: 50%; background: #43d995; }
-.pixel-status-busy { background: #f05b6f; }
-.pixel-status-unavailable { background: #9297a2; }
-.pixel-game-cover { display: block; width: 100%; aspect-ratio: 2 / 3; object-fit: cover; background: linear-gradient(145deg, #36314f, #08060e); }
-.pixel-game-cover[src$="chrome.svg"] { object-fit: contain; padding: 18%; }
-.pixel-game-card .card-body { flex: 1; }
-.pixel-game-card h3 { overflow-wrap: anywhere; }
-@media (prefers-reduced-motion: reduce) { .pixel-seat, .pixel-game-card { transition: none; } }
+/* Small brand and state corrections; Bootstrap owns layout and breakpoints. */
+.pixel-brand { color: #f5f3ff; font-size: 3rem; }
+.pixel-accent, .pixel-eyebrow { color: #c6b3f5; }
+.pixel-eyebrow { font-size: .8rem; letter-spacing: .12em; }
+.pixel-device-card { background: linear-gradient(145deg, #201b2b, #100e16); }
+.pixel-hero-photo { aspect-ratio: 4 / 3; object-fit: cover; }
+.pixel-gallery-photo { aspect-ratio: 4 / 3; object-fit: cover; }
+.pixel-pricing-table { --bs-table-bg: transparent; --bs-table-color: #f5f3ff; --bs-table-border-color: #393246; }
+.pixel-pricing-table thead { --bs-table-bg: #292136; }
+.pixel-pricing-table th, .pixel-pricing-table td { padding: 1rem .5rem; }
+.pixel-disclosure summary { cursor: pointer; }
+.pixel-disclosure[open] summary { color: #d6c4ff; }
+.pixel-game-card { overflow-wrap: anywhere; }
+.pixel-skip { display: block; padding: 1rem; background: #0b0a10; }
+:focus-visible { outline: 3px solid #c6b3f5; outline-offset: 4px; }
+[id] { scroll-margin-top: 1.5rem; }
+/* The native form checks fields; a fragment reveals the static outcome. */
+.booking-checked { display: none; }
+#booking-result:target .booking-checked { display: block; }
+#booking-result:target .booking-idle { display: none; }
+/* Future JavaScript will toggle these existing state classes and containers. */
+.is-hidden { display: none !important; }
+.is-active { color: #f5f3ff; background-color: #332940; }
+.is-selected { border: 2px solid #c6b3f5; background-color: #292136; }
+.is-error { color: #ffdce0; background-color: #421f29; border: 1px solid #dc7e91; }
+.is-success { color: #d5f7e5; background-color: #143528; border: 1px solid #6da98c; }
+.is-disabled { opacity: .55; cursor: not-allowed; }

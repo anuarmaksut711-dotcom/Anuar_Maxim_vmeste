@@ -1,19 +1,16 @@
-# CSS migration
+# Midterm CSS and component changes
 
-| Removed Assignment 2 rules | Bootstrap replacement |
+| Earlier implementation | Current implementation |
 | --- | --- |
-| Custom page widths and centering | `container`, `container-fluid`, `row justify-content-center`, `col-12 col-lg-8` |
-| Header flex layout and mobile menu media queries | `navbar`, `navbar-expand-lg`, `navbar-toggler`, `collapse navbar-collapse` |
-| Navigation dropdown positioning and display rules | `dropdown`, `dropdown-menu`, Bootstrap bundle |
-| Devices and gallery grid-template-columns | `row g-4` / `row g-3`, `col-12 col-md-6 col-lg-4` |
-| Footer flex rules and mobile overrides | `row g-4`, responsive columns, `text-center text-md-start` |
-| Float image and clear element | `row g-4 align-items-center`, `col-12 col-md-6` |
-| Manual section spacing and paragraph alignment | `py-4 py-md-5`, `my-4`, `mb-0`, `text-center text-md-start` |
-| Custom button padding, borders, shapes and hover rules | `btn`, `btn-primary`, `btn-outline-light`, `btn-secondary`, `btn-sm`, `btn-lg` |
-| Fixed minimum table width and manual table spacing | `table table-borderless align-middle text-center`; brand colours remain in CSS |
-| Radio-based slider states and manual positioning | `carousel`, `carousel-inner`, `carousel-item`, standard previous/next controls |
-| Fixed photo heights and gallery spacing | `ratio ratio-4x3`, `img-fluid`, `w-100`, gutters |
-| Manual heading sizes and paragraph styles | `display-2`, `display-6`, `lead`, `small`, `text-body-secondary` |
-| Inline styles, internal CSS and important declarations | Bootstrap text utilities and brand colour variables |
+| Bootstrap bundle on every page | Local Bootstrap CSS only; no scripts |
+| Collapsed navbar and dropdown requiring JS | One visible Bootstrap navigation list, wrapping on narrow screens |
+| Bootstrap carousel | Captioned photo grid |
+| Different navigation and a one-page circle in the header | Shared header, footer and title pattern |
+| Disabled online-booking button | Native form, browser field checks, result area and future message containers |
+| All computers marked free | Stable seat IDs and room layouts without a live-availability claim |
+| Remote game artwork in cards | Text cards with the existing names and categories |
+| Generic photo descriptions | Descriptive alternatives and visible captions |
 
-The two remaining stylesheets contain only local font definitions, brand colour tokens, photo backgrounds and small visual corrections. There are no custom layout rules or custom breakpoints.
+Bootstrap handles layout, spacing, typography utilities, cards, tables and forms. Custom CSS supplies fonts, brand colours, image crops, focus appearance and prepared states. There are no custom layout breakpoints or JavaScript-dependent Bootstrap controls.
+
+The `#booking-result:target` selector reveals a static field-check message after native form navigation. It does not calculate a total or create a reservation. Future JavaScript hooks are documented in the README.
