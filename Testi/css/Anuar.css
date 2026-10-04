@@ -26,5 +26,5 @@
 .is-success { color: #d5f7e5; background-color: #143528; border: 1px solid #6da98c; }
 .is-disabled { opacity: .55; cursor: not-allowed; }
 
-.pixel-game-cover { display: block; width: 100%; aspect-ratio: 2 / 3; object-fit: cover; background: #100e16; }
+.pixel-game-cover { display: block; width: min(100%, 150px); height: 120px; margin-inline: auto; object-fit: cover; object-position: center 25%; background: #100e16; }
 .pixel-game-cover[src$="chrome.svg"] { object-fit: contain; padding: 12%; }
