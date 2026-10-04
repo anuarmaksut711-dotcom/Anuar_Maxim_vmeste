@@ -15,7 +15,7 @@ Open `index.html` in a browser. CSS, fonts and displayed images are local. No in
 | `index.html` | Club introduction, links to other pages, six captioned photographs, visitor questions and contacts |
 | `all-locations.html` | Prices, Standard/Duo/VIP equipment, booking fields and result containers |
 | `computers.html` | Standard, Duo and VIP room layouts, with links to equipment and booking details |
-| `games.html` | The existing list of 20 games and applications, with a route to computer rooms |
+| `games.html` | 20 games and applications with locally stored cover art and a route to computer rooms |
 
 Every page has the same navigation and footer. Titles follow `Page | Pixel Computer Club`. The current navigation item uses `aria-current="page"`. A keyboard-accessible skip link goes to the main content.
 
@@ -72,7 +72,7 @@ Bootstrap supplies containers, responsive grids, cards, tables, navigation, typo
 
 Prices, equipment, contacts, room counts and game names were preserved from the supplied repository. The six existing club photographs were retained and given captions based on visible content. This is not independent verification that the information is current or that the students took the photographs. Confirm those facts before submission.
 
-The unsupported US school-league claim, unrelated team photograph and third-party game covers are not used in the site. Room layouts do not claim that every seat is currently free. Exact Day/Night time windows were missing in the source and were not invented.
+The unsupported US school-league claim and unrelated team photograph are not used in the site. Game cover art is stored locally; its source pages and ownership notes are listed in `assets/pixel/games/SOURCES.md`. Room layouts do not claim that every seat is currently free. Exact Day/Night time windows were missing in the source and were not invented.
 
 ## Validation and screenshots
 

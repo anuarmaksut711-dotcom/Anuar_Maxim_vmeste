@@ -25,3 +25,6 @@
 .is-error { color: #ffdce0; background-color: #421f29; border: 1px solid #dc7e91; }
 .is-success { color: #d5f7e5; background-color: #143528; border: 1px solid #6da98c; }
 .is-disabled { opacity: .55; cursor: not-allowed; }
+
+.pixel-game-cover { display: block; width: 100%; aspect-ratio: 2 / 3; object-fit: cover; background: #100e16; }
+.pixel-game-cover[src$="chrome.svg"] { object-fit: contain; padding: 12%; }
