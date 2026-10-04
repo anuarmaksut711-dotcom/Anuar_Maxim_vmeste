@@ -92,4 +92,4 @@ git push origin HEAD
 git push origin midterm
 ```
 
-After the freeze, follow the assignment's rule for JavaScript-generated changes. Each student should explain their own and a teammate's page: semantic HTML, form labels and constraints, table headers, the Bootstrap grid, CSS specificity and the box model. Be ready to explain why the site works without JavaScript, why the form does not create a real reservation and why each result container exists. [AI-log.md](AI-log.md) records the assistance.
+After the freeze, follow the assignment's rule for JavaScript-generated changes. Each student should explain their own and a teammate's page: semantic HTML, form labels and constraints, table headers, the Bootstrap grid, CSS specificity and the box model. Be ready to explain why the site works without JavaScript, why the form does not create a real reservation and why each result container exists.

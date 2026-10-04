@@ -33,5 +33,4 @@ Browser results: `validation/browser-checks.json`. Local-link and structure resu
 - Confirm ownership of the six club photos and the accuracy of prices, equipment, contacts, opening hours, room counts and game names. Confirm the exact Day/Night time windows and discount terms.
 - Each student must inspect the other student's pages at least two days before the deadline. Add the real reviewer name, date, findings and fixes after the review happens.
 - Each student needs genuine commits from their own account on four different days. The existing history did not yet meet that condition when reviewed; no authors or dates were fabricated.
-- Review the actual recorded AI assistance against the course policy with the instructor.
 - Make final content corrections before the `midterm` tag. This prepared revision is not represented as a completed human review or final freeze.
