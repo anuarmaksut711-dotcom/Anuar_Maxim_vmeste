@@ -6,7 +6,7 @@ Pixel is a four-page website for a computer club at 36 Mangilik El Avenue in Ast
 
 Open `index.html` in a browser. CSS, fonts and displayed images are local. No installation, build step, server or internet connection is needed to browse the pages. Map, Instagram, telephone and email links intentionally open external services.
 
-**No JavaScript is used, including no Bootstrap JavaScript.** Bootstrap 5.3.8 is local CSS only, with its MIT license in `assets/vendor/BOOTSTRAP-LICENSE.txt`. All four pages use visible wrapping navigation. The gallery is a Bootstrap grid. The FAQ uses native HTML `details` and `summary`.
+The computer room page loads `js/computers.js` for demo seat status and package price previews. The other pages use no JavaScript, including no Bootstrap JavaScript. Bootstrap 5.3.8 is local CSS only, with its MIT license in `assets/vendor/BOOTSTRAP-LICENSE.txt`. All four pages use visible wrapping navigation. The gallery is a Bootstrap grid. The FAQ uses native HTML `details` and `summary`.
 
 ## Page list
 
@@ -14,7 +14,7 @@ Open `index.html` in a browser. CSS, fonts and displayed images are local. No in
 | --- | --- |
 | `index.html` | Club introduction, links to other pages, six captioned photographs, visitor questions and contacts |
 | `all-locations.html` | Prices, Standard/Duo/VIP equipment, booking fields and result containers |
-| `computers.html` | Standard, Duo and VIP room layouts, with links to equipment and booking details |
+| `computers.html` | Standard, Duo and VIP room layouts, demo Free labels and package previews, with links to equipment and booking details |
 | `games.html` | 20 games and applications with locally stored cover art and a route to computer rooms |
 
 Every page has the same navigation and footer. Titles follow `Page | Pixel Computer Club`. The current navigation item uses `aria-current="page"`. A keyboard-accessible skip link goes to the main content.
@@ -45,7 +45,9 @@ The browser checks required fields and length constraints. **Clear form** resets
 
 The package selector contains only combinations listed in the table, with a price beside each option. Day is offered under Standard only. The prepared selection and total containers currently refer to that displayed price. Calculation and discount eligibility will be handled in the later JavaScript assignment.
 
-## Prepared for future JavaScript
+## Computer room preview and future JavaScript
+
+`computers.html` loads `js/computers.js`. It marks every seat `Free · demo` and shows the relevant Standard, Duo or VIP package prices when a visitor hovers, focuses or taps a seat. Escape or tapping outside closes the preview. These labels are sample data only, not live availability. Package values are copied from the price table in `all-locations.html`; update both places when prices change.
 
 IDs are English and lowercase. Each form, input, selector, textarea and button has an ID. Future scripts can update existing containers and states without adding HTML or writing CSS by hand.
 
@@ -66,17 +68,17 @@ CSS includes `is-hidden`, `is-active`, `is-selected`, `is-error`, `is-success` a
 
 Bootstrap supplies containers, responsive grids, cards, tables, navigation, typography utilities, spacing and form controls. `col-12 col-md-4` gives one equipment card per row on phones and three at the medium breakpoint. The form/status columns use `col-lg-8` and `col-lg-4`. A responsive table wrapper keeps any table overflow inside the table.
 
-`css/base.css` contains local fonts and brand variables. `css/Anuar.css` contains small photo, colour, focus and state rules. There are no custom layout breakpoints. Script elements and obsolete Bootstrap carousel, dropdown and collapse controls have been removed.
+`css/base.css` contains local fonts and brand variables. `css/Anuar.css` contains small photo, colour, focus and state rules. Obsolete Bootstrap carousel, dropdown and collapse controls have been removed.
 
 ## Content and evidence
 
 Prices, equipment, contacts, room counts and game names were preserved from the supplied repository. The six existing club photographs were retained and given captions based on visible content. This is not independent verification that the information is current or that the students took the photographs. Confirm those facts before submission.
 
-The unsupported US school-league claim and unrelated team photograph are not used in the site. Game cover art is stored locally; its source pages and ownership notes are listed in `assets/pixel/games/SOURCES.md`. Room layouts do not claim that every seat is currently free. Exact Day/Night time windows were missing in the source and were not invented.
+The unsupported US school-league claim and unrelated team photograph are not used in the site. Game cover art is stored locally; its source pages and ownership notes are listed in `assets/pixel/games/SOURCES.md`. All seats are marked Free only as a clearly labeled demo. Exact Day/Night time windows were missing in the source and were not invented.
 
 ## Validation and screenshots
 
-[QUALITY-PASS.md](QUALITY-PASS.md) records the dated findings, checks and remaining student responsibilities. `validation/` contains machine-readable results. `screenshots/` contains each page at 375 px and 1440 px, plus the checked-form state. Browser checks ran with JavaScript disabled.
+[QUALITY-PASS.md](QUALITY-PASS.md) records the earlier midterm findings, checks and remaining student responsibilities. `validation/` contains machine-readable results. `screenshots/` contains the earlier page captures at 375 px and 1440 px, plus the checked-form state. Those earlier browser checks ran with JavaScript disabled, before this computer room preview was added.
 
 ## Final freeze and defense
 

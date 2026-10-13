@@ -28,3 +28,78 @@
 
 .pixel-game-cover { display: block; flex: 0 0 72px; width: 72px; height: 72px; margin: 0 0 .75rem; object-fit: cover; object-position: center; background: #100e16; }
 .pixel-game-cover[src$="chrome.svg"] { object-fit: contain; padding: 12%; }
+
+/* Room seat preview follows the site's dark surfaces and lavender accent. */
+.pixel-seat {
+  min-height: 112px;
+  border: 1px solid #493d5c;
+  cursor: pointer;
+  transition: border-color .18s ease, background-color .18s ease, transform .18s ease;
+}
+.pixel-seat:hover, .pixel-seat:focus-visible {
+  border-color: #c6b3f5;
+  background-color: #21192e !important;
+  transform: translateY(-2px);
+}
+.pixel-seat-status {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: .4rem;
+  margin: .45rem auto 0;
+  padding: .18rem .55rem;
+  border: 1px solid #426b58;
+  border-radius: 999px;
+  background: #142b21;
+  color: #a7edc5;
+  font-size: .7rem;
+  line-height: 1.2;
+  white-space: nowrap;
+}
+.pixel-seat-status::before {
+  content: "";
+  width: .4rem;
+  height: .4rem;
+  border-radius: 50%;
+  background: #8de5b2;
+  box-shadow: 0 0 7px #8de5b280;
+}
+.pixel-seat-preview {
+  position: fixed;
+  z-index: 1100;
+  width: min(260px, calc(100vw - 24px));
+  padding: 1rem;
+  border: 1px solid #6d568e;
+  border-radius: .8rem;
+  background: linear-gradient(150deg, #292036, #16111e);
+  box-shadow: 0 16px 40px #0009;
+  color: #f5f3ff;
+  pointer-events: none;
+}
+.pixel-seat-preview[hidden] { display: none; }
+.pixel-seat-preview-title {
+  display: block;
+  margin-bottom: .6rem;
+  color: #d7c5ff;
+  letter-spacing: .03em;
+}
+.pixel-seat-prices {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: .3rem 1rem;
+  margin: 0;
+  font-size: .85rem;
+}
+.pixel-seat-prices dt { color: #b8b4c6; font-weight: 400; }
+.pixel-seat-prices dd { margin: 0; text-align: right; }
+.pixel-seat-preview-note {
+  display: block;
+  margin-top: .7rem;
+  padding-top: .6rem;
+  border-top: 1px solid #493d5c;
+  color: #b8b4c6;
+  font-size: .68rem;
+}
+@media (prefers-reduced-motion: reduce) {
+  .pixel-seat { transition: none; }
+}
