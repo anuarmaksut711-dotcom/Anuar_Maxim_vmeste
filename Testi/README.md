@@ -14,7 +14,7 @@ The computer room page loads `js/computers.js` for demo seat status and package 
 | --- | --- |
 | `index.html` | Club introduction, links to other pages, six captioned photographs, visitor questions and contacts |
 | `all-locations.html` | Prices, Standard/Duo/VIP equipment, booking fields and result containers |
-| `computers.html` | Standard, Duo and VIP room layouts, demo Free labels and package previews, with links to equipment and booking details |
+| `computers.html` | Schematic Standard, Duo and VIP seating maps, demo Free labels and package previews, with links to equipment and booking details |
 | `games.html` | 20 games and applications with locally stored cover art and a route to computer rooms |
 
 Every page has the same navigation and footer. Titles follow `Page | Pixel Computer Club`. The current navigation item uses `aria-current="page"`. A keyboard-accessible skip link goes to the main content.
@@ -47,7 +47,9 @@ The package selector contains only combinations listed in the table, with a pric
 
 ## Computer room preview and future JavaScript
 
-`computers.html` loads `js/computers.js`. It marks every seat `Free · demo` and shows the relevant Standard, Duo or VIP package prices when a visitor hovers, focuses or taps a seat. Escape or tapping outside closes the preview. These labels are sample data only, not live availability. Package values are copied from the price table in `all-locations.html`; update both places when prices change.
+`computers.html` loads `js/computers.js`. The Standard map shows four rows of five seats, with walkways after rows 1 and 3. Row 3 is labeled wired mice and no monitor arms; rows 1, 2 and 4 are labeled wireless mice and monitor arms. On narrow screens, the map scrolls sideways to preserve five seats per row. Duo and VIP use matching schematic map panels. The diagrams show the requested seating arrangement, not measured room dimensions.
+
+The script marks every seat `Free · demo` and shows the relevant Standard, Duo or VIP package prices when a visitor hovers, focuses or taps a seat. The Standard preview also shows its row equipment. Escape or tapping outside closes the preview. These labels are sample data only, not live availability. Package values are copied from the price table in `all-locations.html`; update both places when prices change.
 
 IDs are English and lowercase. Each form, input, selector, textarea and button has an ID. Future scripts can update existing containers and states without adding HTML or writing CSS by hand.
 

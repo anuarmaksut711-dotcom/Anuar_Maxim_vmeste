@@ -62,6 +62,17 @@ function showPrices(seat) {
   heading.textContent = `${seat.dataset.seatName} · ${room.toUpperCase()}`;
   pricePreview.append(heading);
 
+  const row = seat.closest(".pixel-map-row");
+  if (row) {
+    const setup = document.createElement("span");
+    setup.className = "pixel-seat-preview-setup";
+    if (row.classList.contains("pixel-map-row-wired")) {
+      setup.classList.add("pixel-seat-preview-setup-wired");
+    }
+    setup.textContent = `Row ${row.dataset.row} · ${row.dataset.setup}`;
+    pricePreview.append(setup);
+  }
+
   const list = document.createElement("dl");
   list.className = "pixel-seat-prices";
   for (const [label, amount] of packages) {
@@ -84,7 +95,7 @@ function showPrices(seat) {
 }
 
 for (const seat of document.querySelectorAll(".pixel-seat")) {
-  const seatName = seat.textContent.trim();
+  const seatName = seat.querySelector("span:not([aria-hidden])").textContent.trim();
   seat.dataset.seatName = seatName;
   seat.setAttribute("role", "button");
   seat.setAttribute("tabindex", "0");
