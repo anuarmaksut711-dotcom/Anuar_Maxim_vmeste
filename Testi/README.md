@@ -47,7 +47,7 @@ The package selector contains only combinations listed in the table, with a pric
 
 ## Computer room preview and future JavaScript
 
-`computers.html` loads `js/computers.js`. The Standard map shows four rows of five seats, with walkways after rows 1 and 3. Row 3 is labeled wired mice and no monitor arms; rows 1, 2 and 4 are labeled wireless mice and monitor arms. On narrow screens, the map scrolls sideways to preserve five seats per row. Duo and VIP use matching schematic map panels. The diagrams show the requested seating arrangement, not measured room dimensions.
+`computers.html` loads `js/computers.js`. Its single schematic club map follows the supplied sketch: access and cashier at the top, sofa above the Standard rows, Duo at the upper right, and a corridor leading to VIP at the lower right. The restroom is left of that corridor. The Standard area has four horizontal rows of five seats, numbered right to left, with walkways after rows 1 and 3. Row 3 is labeled wired mice and no monitor arms; rows 1, 2 and 4 are labeled wireless mice and monitor arms. On narrow screens, the whole map scrolls sideways. The diagram is a seating guide, not a measured architectural plan.
 
 The script marks every seat `Free · demo` and shows the relevant Standard, Duo or VIP package prices when a visitor hovers, focuses or taps a seat. The Standard preview also shows its row equipment. Escape or tapping outside closes the preview. These labels are sample data only, not live availability. Package values are copied from the price table in `all-locations.html`; update both places when prices change.
 

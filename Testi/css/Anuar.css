@@ -134,6 +134,103 @@
   .pixel-map-swipe { display: block; }
   .pixel-floorplan-duo { min-width: 320px; }
 }
+.pixel-map-kicker { color: #cbb8e7; font-size: .7rem; letter-spacing: .1em; }
+.pixel-venue-map {
+  display: grid;
+  grid-template-columns: 760px 76px 260px;
+  grid-template-rows: 90px 130px 430px 230px;
+  gap: 14px;
+  width: 1162px;
+  margin-inline: auto;
+  padding: 16px;
+  border: 1px solid #514263;
+  border-radius: .85rem;
+  background-color: #14101c;
+  background-image: linear-gradient(#baa1e008 1px, transparent 1px), linear-gradient(90deg, #baa1e008 1px, transparent 1px);
+  background-size: 24px 24px;
+  box-shadow: inset 0 0 0 4px #21192c;
+}
+.pixel-map-place, .pixel-venue-standard, .pixel-venue-duo, .pixel-venue-vip {
+  border: 1px solid #57496a;
+  border-radius: .65rem;
+  background: #211a2bcc;
+}
+.pixel-map-place {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: .15rem;
+  text-align: center;
+  color: #e5d9f5;
+  font-size: .75rem;
+  letter-spacing: .08em;
+}
+.pixel-map-place-icon { color: #c6b3f5; font-size: 1.4rem; line-height: 1; }
+.pixel-venue-access { grid-column: 1; grid-row: 1; width: 150px; }
+.pixel-venue-cashier { grid-column: 1; grid-row: 1; width: 240px; justify-self: end; }
+.pixel-venue-sofa { grid-column: 1; grid-row: 2; width: 260px; height: 65px; margin-left: 180px; align-self: center; }
+.pixel-venue-standard {
+  grid-column: 1;
+  grid-row: 3 / 5;
+  width: 620px;
+  padding: .7rem;
+  align-self: start;
+}
+.pixel-venue-restroom {
+  grid-column: 1;
+  grid-row: 3;
+  width: 120px;
+  min-height: 92px;
+  justify-self: end;
+  align-self: center;
+  border-color: #756087;
+}
+.pixel-venue-restroom small { color: #b8a8c9; font-size: .54rem; letter-spacing: .02em; }
+.pixel-venue-corridor {
+  grid-column: 2;
+  grid-row: 2 / 5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  border: 1px dashed #86709c;
+  border-radius: .6rem;
+  background: #382e44aa;
+  color: #e0cefa;
+  font-size: .7rem;
+  letter-spacing: .13em;
+  writing-mode: vertical-rl;
+}
+.pixel-venue-corridor span:last-child { font-size: 1.5rem; }
+.pixel-venue-duo, .pixel-venue-vip { grid-column: 3; padding: .65rem; }
+.pixel-venue-duo { grid-row: 1 / 3; }
+.pixel-venue-vip { grid-row: 4; }
+.pixel-map-zone-title {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: .2rem .5rem;
+  margin-bottom: .6rem;
+  padding-bottom: .4rem;
+  border-bottom: 1px solid #544362;
+}
+.pixel-map-zone-title h3 { margin: 0; font-family: "Teko Local", sans-serif; font-size: 1.6rem; line-height: 1; }
+.pixel-map-zone-title span { color: #baacd0; font-size: .58rem; letter-spacing: .05em; }
+.pixel-venue-map .pixel-seat { min-height: 78px; padding: .45rem !important; }
+.pixel-venue-map .pixel-seat .h3 { font-size: 1.4rem; }
+.pixel-venue-map .pixel-seat-status { margin-top: .2rem; padding: .1rem .3rem; font-size: .58rem; }
+.pixel-venue-standard .pixel-seat-grid { direction: rtl; gap: .5rem; }
+.pixel-venue-standard .pixel-seat { direction: ltr; }
+.pixel-venue-standard .pixel-map-row { padding: .45rem; }
+.pixel-venue-standard .pixel-map-row-heading { margin-bottom: .4rem; }
+.pixel-venue-standard .pixel-map-row + .pixel-map-row { margin-top: .45rem; }
+.pixel-venue-standard .pixel-map-aisle { margin: .5rem .3rem; min-height: 20px; }
+.pixel-venue-duo .pixel-seat-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .45rem; }
+.pixel-venue-vip .pixel-seat-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: .4rem; }
+.pixel-venue-vip .pixel-seat { min-height: 70px; }
+.pixel-venue-vip .pixel-seat-status { gap: .2rem; padding: .08rem .18rem; font-size: .49rem; }
 .pixel-seat {
   min-height: 112px;
   border: 1px solid #493d5c;

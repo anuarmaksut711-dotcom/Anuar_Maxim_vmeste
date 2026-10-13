@@ -9,8 +9,8 @@
     <!-- Local Bootstrap CSS supplies the layout. -->
     <link rel="stylesheet" href="assets/vendor/bootstrap.min.css">
     <link rel="stylesheet" href="css/base.css">
-    <link rel="stylesheet" href="css/Anuar.css?v=seating-map-1">
-    <script src="js/computers.js?v=seating-map-1" defer></script>
+    <link rel="stylesheet" href="css/Anuar.css?v=venue-map-2">
+    <script src="js/computers.js?v=venue-map-2" defer></script>
   </head>
   <body>
     <a class="visually-hidden-focusable pixel-skip" href="#main-content">Skip to content</a>
@@ -59,266 +59,241 @@
         </nav>
       </header>
       <div class="container">
-        <section id="room-standard" class="card pixel-device-card p-3 p-md-4 mb-4" aria-labelledby="room-standard-title">
-          <div class="d-flex flex-wrap justify-content-between align-items-baseline gap-2 mb-3">
-            <h2 class="display-6 mb-0" id="room-standard-title">Standard room</h2>
-            <span class="text-body-secondary">20 computers · 4 rows of 5</span>
+        <section class="card pixel-device-card p-3 p-md-4 mb-4" aria-labelledby="club-map-title">
+          <div class="d-flex flex-wrap justify-content-between align-items-baseline gap-2 mb-2">
+            <h2 class="display-6 mb-0" id="club-map-title">Club seating map</h2>
+            <span class="pixel-map-kicker">SCHEMATIC · DEMO AVAILABILITY</span>
           </div>
-          <p class="small text-body-secondary mb-3">Rows 1, 2 and 4 have wireless mice and monitor arms. Row 3 has wired mice and no monitor arms.</p>
-          <p class="pixel-map-swipe small text-body-secondary">Scroll sideways to see all five seats in each row.</p>
-          <div class="pixel-map-scroll mb-4" role="region" aria-label="Standard seating map" tabindex="0">
-            <div class="pixel-floorplan">
-              <div class="pixel-map-header">
-                <span>STANDARD / 20 STATIONS</span>
-                <span>SEATING MAP · SCHEMATIC</span>
-              </div>
+          <p class="small text-body-secondary mb-3">Standard rows run right to left, five computers per row. Row 3 has wired mice and no monitor arms; rows 1, 2 and 4 have wireless mice and monitor arms. All Free labels are for this demo only.</p>
+          <p class="pixel-map-swipe small text-body-secondary">Scroll sideways to explore the full floor plan.</p>
+          <div class="pixel-map-scroll mb-4" role="region" aria-label="Club seating map" tabindex="0">
+            <div class="pixel-venue-map">
+              <div class="pixel-venue-access pixel-map-place"><span class="pixel-map-place-icon" aria-hidden="true">⇢</span><span>ACCESS</span></div>
+              <div class="pixel-venue-cashier pixel-map-place"><span class="pixel-map-place-icon" aria-hidden="true">▤</span><span>CASHIER</span></div>
+              <div class="pixel-venue-sofa pixel-map-place"><span class="pixel-map-place-icon" aria-hidden="true">▰</span><span>SOFA</span></div>
+              <section id="room-standard" class="pixel-venue-standard" aria-labelledby="room-standard-title">
+                <div class="pixel-map-zone-title"><h3 id="room-standard-title">Standard room</h3><span>20 COMPUTERS</span></div>
               <div class="pixel-map-row" data-row="1" data-setup="Wireless mice · Monitor arms">
                 <div class="pixel-map-row-heading">
-                  <span class="pixel-row-index">ROW 01</span>
+                  <span class="pixel-row-index">ROW 01 <span aria-hidden="true">←</span></span>
                   <span class="pixel-row-spec">Wireless mice · Monitor arms</span>
                 </div>
-                <ol class="pixel-seat-grid list-unstyled mb-0" aria-label="Standard row 1: Wireless mice · Monitor arms">
-                <li class="pixel-map-slot">
-                  <div id="seat-pc-01" class="pixel-seat card bg-black text-center p-3">
-                    <span class="pixel-accent h3 mb-1" aria-hidden="true">▣</span>
-                    <span>PC 01</span>
-                  </div>
-                </li>
-                <li class="pixel-map-slot">
-                  <div id="seat-pc-02" class="pixel-seat card bg-black text-center p-3">
-                    <span class="pixel-accent h3 mb-1" aria-hidden="true">▣</span>
-                    <span>PC 02</span>
-                  </div>
-                </li>
-                <li class="pixel-map-slot">
-                  <div id="seat-pc-03" class="pixel-seat card bg-black text-center p-3">
-                    <span class="pixel-accent h3 mb-1" aria-hidden="true">▣</span>
-                    <span>PC 03</span>
-                  </div>
-                </li>
-                <li class="pixel-map-slot">
-                  <div id="seat-pc-04" class="pixel-seat card bg-black text-center p-3">
-                    <span class="pixel-accent h3 mb-1" aria-hidden="true">▣</span>
-                    <span>PC 04</span>
-                  </div>
-                </li>
-                <li class="pixel-map-slot">
-                  <div id="seat-pc-05" class="pixel-seat card bg-black text-center p-3">
-                    <span class="pixel-accent h3 mb-1" aria-hidden="true">▣</span>
-                    <span>PC 05</span>
-                  </div>
-                </li>
+                <ol class="pixel-seat-grid list-unstyled mb-0" aria-label="Standard row 1, numbered right to left: Wireless mice · Monitor arms">
+                  <li class="pixel-map-slot">
+                    <div id="seat-pc-01" class="pixel-seat card bg-black text-center p-3">
+                      <span class="pixel-accent h3 mb-1" aria-hidden="true">▣</span>
+                      <span>PC 01</span>
+                    </div>
+                  </li>
+                  <li class="pixel-map-slot">
+                    <div id="seat-pc-02" class="pixel-seat card bg-black text-center p-3">
+                      <span class="pixel-accent h3 mb-1" aria-hidden="true">▣</span>
+                      <span>PC 02</span>
+                    </div>
+                  </li>
+                  <li class="pixel-map-slot">
+                    <div id="seat-pc-03" class="pixel-seat card bg-black text-center p-3">
+                      <span class="pixel-accent h3 mb-1" aria-hidden="true">▣</span>
+                      <span>PC 03</span>
+                    </div>
+                  </li>
+                  <li class="pixel-map-slot">
+                    <div id="seat-pc-04" class="pixel-seat card bg-black text-center p-3">
+                      <span class="pixel-accent h3 mb-1" aria-hidden="true">▣</span>
+                      <span>PC 04</span>
+                    </div>
+                  </li>
+                  <li class="pixel-map-slot">
+                    <div id="seat-pc-05" class="pixel-seat card bg-black text-center p-3">
+                      <span class="pixel-accent h3 mb-1" aria-hidden="true">▣</span>
+                      <span>PC 05</span>
+                    </div>
+                  </li>
                 </ol>
               </div>
-              <div class="pixel-map-aisle" aria-hidden="true"><span>WALKWAY</span></div>
+              <div class="pixel-map-aisle" aria-hidden="true"><span>OPEN WALKWAY</span></div>
               <div class="pixel-map-row" data-row="2" data-setup="Wireless mice · Monitor arms">
                 <div class="pixel-map-row-heading">
-                  <span class="pixel-row-index">ROW 02</span>
+                  <span class="pixel-row-index">ROW 02 <span aria-hidden="true">←</span></span>
                   <span class="pixel-row-spec">Wireless mice · Monitor arms</span>
                 </div>
-                <ol class="pixel-seat-grid list-unstyled mb-0" aria-label="Standard row 2: Wireless mice · Monitor arms">
-                <li class="pixel-map-slot">
-                  <div id="seat-pc-06" class="pixel-seat card bg-black text-center p-3">
-                    <span class="pixel-accent h3 mb-1" aria-hidden="true">▣</span>
-                    <span>PC 06</span>
-                  </div>
-                </li>
-                <li class="pixel-map-slot">
-                  <div id="seat-pc-07" class="pixel-seat card bg-black text-center p-3">
-                    <span class="pixel-accent h3 mb-1" aria-hidden="true">▣</span>
-                    <span>PC 07</span>
-                  </div>
-                </li>
-                <li class="pixel-map-slot">
-                  <div id="seat-pc-08" class="pixel-seat card bg-black text-center p-3">
-                    <span class="pixel-accent h3 mb-1" aria-hidden="true">▣</span>
-                    <span>PC 08</span>
-                  </div>
-                </li>
-                <li class="pixel-map-slot">
-                  <div id="seat-pc-09" class="pixel-seat card bg-black text-center p-3">
-                    <span class="pixel-accent h3 mb-1" aria-hidden="true">▣</span>
-                    <span>PC 09</span>
-                  </div>
-                </li>
-                <li class="pixel-map-slot">
-                  <div id="seat-pc-10" class="pixel-seat card bg-black text-center p-3">
-                    <span class="pixel-accent h3 mb-1" aria-hidden="true">▣</span>
-                    <span>PC 10</span>
-                  </div>
-                </li>
+                <ol class="pixel-seat-grid list-unstyled mb-0" aria-label="Standard row 2, numbered right to left: Wireless mice · Monitor arms">
+                  <li class="pixel-map-slot">
+                    <div id="seat-pc-06" class="pixel-seat card bg-black text-center p-3">
+                      <span class="pixel-accent h3 mb-1" aria-hidden="true">▣</span>
+                      <span>PC 06</span>
+                    </div>
+                  </li>
+                  <li class="pixel-map-slot">
+                    <div id="seat-pc-07" class="pixel-seat card bg-black text-center p-3">
+                      <span class="pixel-accent h3 mb-1" aria-hidden="true">▣</span>
+                      <span>PC 07</span>
+                    </div>
+                  </li>
+                  <li class="pixel-map-slot">
+                    <div id="seat-pc-08" class="pixel-seat card bg-black text-center p-3">
+                      <span class="pixel-accent h3 mb-1" aria-hidden="true">▣</span>
+                      <span>PC 08</span>
+                    </div>
+                  </li>
+                  <li class="pixel-map-slot">
+                    <div id="seat-pc-09" class="pixel-seat card bg-black text-center p-3">
+                      <span class="pixel-accent h3 mb-1" aria-hidden="true">▣</span>
+                      <span>PC 09</span>
+                    </div>
+                  </li>
+                  <li class="pixel-map-slot">
+                    <div id="seat-pc-10" class="pixel-seat card bg-black text-center p-3">
+                      <span class="pixel-accent h3 mb-1" aria-hidden="true">▣</span>
+                      <span>PC 10</span>
+                    </div>
+                  </li>
                 </ol>
               </div>
               <div class="pixel-map-row pixel-map-row-wired" data-row="3" data-setup="Wired mice · No monitor arms">
                 <div class="pixel-map-row-heading">
-                  <span class="pixel-row-index">ROW 03</span>
+                  <span class="pixel-row-index">ROW 03 <span aria-hidden="true">←</span></span>
                   <span class="pixel-row-spec">Wired mice · No monitor arms</span>
                 </div>
-                <ol class="pixel-seat-grid list-unstyled mb-0" aria-label="Standard row 3: Wired mice · No monitor arms">
-                <li class="pixel-map-slot">
-                  <div id="seat-pc-11" class="pixel-seat card bg-black text-center p-3">
-                    <span class="pixel-accent h3 mb-1" aria-hidden="true">▣</span>
-                    <span>PC 11</span>
-                  </div>
-                </li>
-                <li class="pixel-map-slot">
-                  <div id="seat-pc-12" class="pixel-seat card bg-black text-center p-3">
-                    <span class="pixel-accent h3 mb-1" aria-hidden="true">▣</span>
-                    <span>PC 12</span>
-                  </div>
-                </li>
-                <li class="pixel-map-slot">
-                  <div id="seat-pc-13" class="pixel-seat card bg-black text-center p-3">
-                    <span class="pixel-accent h3 mb-1" aria-hidden="true">▣</span>
-                    <span>PC 13</span>
-                  </div>
-                </li>
-                <li class="pixel-map-slot">
-                  <div id="seat-pc-14" class="pixel-seat card bg-black text-center p-3">
-                    <span class="pixel-accent h3 mb-1" aria-hidden="true">▣</span>
-                    <span>PC 14</span>
-                  </div>
-                </li>
-                <li class="pixel-map-slot">
-                  <div id="seat-pc-15" class="pixel-seat card bg-black text-center p-3">
-                    <span class="pixel-accent h3 mb-1" aria-hidden="true">▣</span>
-                    <span>PC 15</span>
-                  </div>
-                </li>
+                <ol class="pixel-seat-grid list-unstyled mb-0" aria-label="Standard row 3, numbered right to left: Wired mice · No monitor arms">
+                  <li class="pixel-map-slot">
+                    <div id="seat-pc-11" class="pixel-seat card bg-black text-center p-3">
+                      <span class="pixel-accent h3 mb-1" aria-hidden="true">▣</span>
+                      <span>PC 11</span>
+                    </div>
+                  </li>
+                  <li class="pixel-map-slot">
+                    <div id="seat-pc-12" class="pixel-seat card bg-black text-center p-3">
+                      <span class="pixel-accent h3 mb-1" aria-hidden="true">▣</span>
+                      <span>PC 12</span>
+                    </div>
+                  </li>
+                  <li class="pixel-map-slot">
+                    <div id="seat-pc-13" class="pixel-seat card bg-black text-center p-3">
+                      <span class="pixel-accent h3 mb-1" aria-hidden="true">▣</span>
+                      <span>PC 13</span>
+                    </div>
+                  </li>
+                  <li class="pixel-map-slot">
+                    <div id="seat-pc-14" class="pixel-seat card bg-black text-center p-3">
+                      <span class="pixel-accent h3 mb-1" aria-hidden="true">▣</span>
+                      <span>PC 14</span>
+                    </div>
+                  </li>
+                  <li class="pixel-map-slot">
+                    <div id="seat-pc-15" class="pixel-seat card bg-black text-center p-3">
+                      <span class="pixel-accent h3 mb-1" aria-hidden="true">▣</span>
+                      <span>PC 15</span>
+                    </div>
+                  </li>
                 </ol>
               </div>
-              <div class="pixel-map-aisle" aria-hidden="true"><span>WALKWAY</span></div>
+              <div class="pixel-map-aisle" aria-hidden="true"><span>OPEN WALKWAY</span></div>
               <div class="pixel-map-row" data-row="4" data-setup="Wireless mice · Monitor arms">
                 <div class="pixel-map-row-heading">
-                  <span class="pixel-row-index">ROW 04</span>
+                  <span class="pixel-row-index">ROW 04 <span aria-hidden="true">←</span></span>
                   <span class="pixel-row-spec">Wireless mice · Monitor arms</span>
                 </div>
-                <ol class="pixel-seat-grid list-unstyled mb-0" aria-label="Standard row 4: Wireless mice · Monitor arms">
-                <li class="pixel-map-slot">
-                  <div id="seat-pc-16" class="pixel-seat card bg-black text-center p-3">
-                    <span class="pixel-accent h3 mb-1" aria-hidden="true">▣</span>
-                    <span>PC 16</span>
-                  </div>
-                </li>
-                <li class="pixel-map-slot">
-                  <div id="seat-pc-17" class="pixel-seat card bg-black text-center p-3">
-                    <span class="pixel-accent h3 mb-1" aria-hidden="true">▣</span>
-                    <span>PC 17</span>
-                  </div>
-                </li>
-                <li class="pixel-map-slot">
-                  <div id="seat-pc-18" class="pixel-seat card bg-black text-center p-3">
-                    <span class="pixel-accent h3 mb-1" aria-hidden="true">▣</span>
-                    <span>PC 18</span>
-                  </div>
-                </li>
-                <li class="pixel-map-slot">
-                  <div id="seat-pc-19" class="pixel-seat card bg-black text-center p-3">
-                    <span class="pixel-accent h3 mb-1" aria-hidden="true">▣</span>
-                    <span>PC 19</span>
-                  </div>
-                </li>
-                <li class="pixel-map-slot">
-                  <div id="seat-pc-20" class="pixel-seat card bg-black text-center p-3">
-                    <span class="pixel-accent h3 mb-1" aria-hidden="true">▣</span>
-                    <span>PC 20</span>
-                  </div>
-                </li>
+                <ol class="pixel-seat-grid list-unstyled mb-0" aria-label="Standard row 4, numbered right to left: Wireless mice · Monitor arms">
+                  <li class="pixel-map-slot">
+                    <div id="seat-pc-16" class="pixel-seat card bg-black text-center p-3">
+                      <span class="pixel-accent h3 mb-1" aria-hidden="true">▣</span>
+                      <span>PC 16</span>
+                    </div>
+                  </li>
+                  <li class="pixel-map-slot">
+                    <div id="seat-pc-17" class="pixel-seat card bg-black text-center p-3">
+                      <span class="pixel-accent h3 mb-1" aria-hidden="true">▣</span>
+                      <span>PC 17</span>
+                    </div>
+                  </li>
+                  <li class="pixel-map-slot">
+                    <div id="seat-pc-18" class="pixel-seat card bg-black text-center p-3">
+                      <span class="pixel-accent h3 mb-1" aria-hidden="true">▣</span>
+                      <span>PC 18</span>
+                    </div>
+                  </li>
+                  <li class="pixel-map-slot">
+                    <div id="seat-pc-19" class="pixel-seat card bg-black text-center p-3">
+                      <span class="pixel-accent h3 mb-1" aria-hidden="true">▣</span>
+                      <span>PC 19</span>
+                    </div>
+                  </li>
+                  <li class="pixel-map-slot">
+                    <div id="seat-pc-20" class="pixel-seat card bg-black text-center p-3">
+                      <span class="pixel-accent h3 mb-1" aria-hidden="true">▣</span>
+                      <span>PC 20</span>
+                    </div>
+                  </li>
                 </ol>
               </div>
-              <div class="pixel-map-footer"><span>Hover, focus or tap a station for prices</span><span>20 / 20 DEMO FREE</span></div>
+              </section>
+              <div class="pixel-venue-restroom pixel-map-place"><span class="pixel-map-place-icon" aria-hidden="true">WC</span><span>RESTROOM</span><small>LEFT OF CORRIDOR</small></div>
+              <div class="pixel-venue-corridor" aria-label="Corridor to VIP room"><span>CORRIDOR TO VIP</span><span aria-hidden="true">↓</span></div>
+              <section id="room-duo" class="pixel-venue-duo" aria-labelledby="room-duo-title">
+                <div class="pixel-map-zone-title"><h3 id="room-duo-title">Duo room</h3><span>2 COMPUTERS</span></div>
+                <ol class="pixel-seat-grid pixel-seat-grid-duo list-unstyled mb-0" aria-label="Duo computer layout">
+                  <li class="pixel-map-slot">
+                    <div id="seat-duo-01" class="pixel-seat card bg-black text-center p-3">
+                      <span class="pixel-accent h3 mb-1" aria-hidden="true">▣</span>
+                      <span>DUO 01</span>
+                    </div>
+                  </li>
+                  <li class="pixel-map-slot">
+                    <div id="seat-duo-02" class="pixel-seat card bg-black text-center p-3">
+                      <span class="pixel-accent h3 mb-1" aria-hidden="true">▣</span>
+                      <span>DUO 02</span>
+                    </div>
+                  </li>
+                </ol>
+              </section>
+              <section id="room-vip" class="pixel-venue-vip" aria-labelledby="room-vip-title">
+                <div class="pixel-map-zone-title"><h3 id="room-vip-title">VIP room</h3><span>5 COMPUTERS</span></div>
+                <ol class="pixel-seat-grid pixel-seat-grid-vip list-unstyled mb-0" aria-label="VIP computer layout">
+                  <li class="pixel-map-slot">
+                    <div id="seat-vip-01" class="pixel-seat card bg-black text-center p-3">
+                      <span class="pixel-accent h3 mb-1" aria-hidden="true">▣</span>
+                      <span>VIP 01</span>
+                    </div>
+                  </li>
+                  <li class="pixel-map-slot">
+                    <div id="seat-vip-02" class="pixel-seat card bg-black text-center p-3">
+                      <span class="pixel-accent h3 mb-1" aria-hidden="true">▣</span>
+                      <span>VIP 02</span>
+                    </div>
+                  </li>
+                  <li class="pixel-map-slot">
+                    <div id="seat-vip-03" class="pixel-seat card bg-black text-center p-3">
+                      <span class="pixel-accent h3 mb-1" aria-hidden="true">▣</span>
+                      <span>VIP 03</span>
+                    </div>
+                  </li>
+                  <li class="pixel-map-slot">
+                    <div id="seat-vip-04" class="pixel-seat card bg-black text-center p-3">
+                      <span class="pixel-accent h3 mb-1" aria-hidden="true">▣</span>
+                      <span>VIP 04</span>
+                    </div>
+                  </li>
+                  <li class="pixel-map-slot">
+                    <div id="seat-vip-05" class="pixel-seat card bg-black text-center p-3">
+                      <span class="pixel-accent h3 mb-1" aria-hidden="true">▣</span>
+                      <span>VIP 05</span>
+                    </div>
+                  </li>
+                </ol>
+              </section>
             </div>
           </div>
-          <div>
-            <a class="btn btn-outline-light" href="all-locations.html#device-standard">View Standard equipment</a>
+          <div class="d-flex flex-wrap gap-2 mb-3">
+            <a class="btn btn-outline-light" href="all-locations.html#device-standard">Standard equipment</a>
+            <a class="btn btn-outline-light" href="all-locations.html#device-duo">Duo equipment</a>
+            <a class="btn btn-outline-light" href="all-locations.html#device-vip">VIP equipment</a>
+          </div>
+          <div class="d-flex flex-wrap gap-3">
+            <a class="btn btn-primary btn-lg" href="all-locations.html#prices">Compare packages</a>
+            <a class="btn btn-outline-light btn-lg" href="all-locations.html#booking">Booking details</a>
           </div>
         </section>
-        <section id="room-duo" class="card pixel-device-card p-3 p-md-4 mb-4" aria-labelledby="room-duo-title">
-          <div class="d-flex flex-wrap justify-content-between align-items-baseline gap-2 mb-3">
-            <h2 class="display-6 mb-0" id="room-duo-title">Duo room</h2>
-            <span class="text-body-secondary">2 computers</span>
-          </div>
-          <div class="pixel-map-scroll mb-4" role="region" aria-label="Duo seating map" tabindex="0">
-            <div class="pixel-floorplan pixel-floorplan-duo">
-              <div class="pixel-map-header">
-                <span>DUO / 2 STATIONS</span>
-                <span>SEATING MAP · SCHEMATIC</span>
-              </div>
-              <ol class="pixel-seat-grid pixel-seat-grid-duo list-unstyled mb-0" aria-label="Duo computer layout">
-                <li class="pixel-map-slot">
-                  <div id="seat-duo-01" class="pixel-seat card bg-black text-center p-3">
-                    <span class="pixel-accent h3 mb-1" aria-hidden="true">▣</span>
-                    <span>DUO 01</span>
-                  </div>
-                </li>
-                <li class="pixel-map-slot">
-                  <div id="seat-duo-02" class="pixel-seat card bg-black text-center p-3">
-                    <span class="pixel-accent h3 mb-1" aria-hidden="true">▣</span>
-                    <span>DUO 02</span>
-                  </div>
-                </li>
-              </ol>
-              <div class="pixel-map-footer"><span>Hover, focus or tap a station for prices</span><span>2 / 2 DEMO FREE</span></div>
-            </div>
-          </div>
-          <div>
-            <a class="btn btn-outline-light" href="all-locations.html#device-duo">View Duo equipment</a>
-          </div>
-        </section>
-        <section id="room-vip" class="card pixel-device-card p-3 p-md-4 mb-4" aria-labelledby="room-vip-title">
-          <div class="d-flex flex-wrap justify-content-between align-items-baseline gap-2 mb-3">
-            <h2 class="display-6 mb-0" id="room-vip-title">VIP room</h2>
-            <span class="text-body-secondary">5 computers</span>
-          </div>
-          <div class="pixel-map-scroll mb-4" role="region" aria-label="VIP seating map" tabindex="0">
-            <div class="pixel-floorplan pixel-floorplan-vip">
-              <div class="pixel-map-header">
-                <span>VIP / 5 STATIONS</span>
-                <span>SEATING MAP · SCHEMATIC</span>
-              </div>
-              <ol class="pixel-seat-grid pixel-seat-grid-vip list-unstyled mb-0" aria-label="VIP computer layout">
-                <li class="pixel-map-slot">
-                  <div id="seat-vip-01" class="pixel-seat card bg-black text-center p-3">
-                    <span class="pixel-accent h3 mb-1" aria-hidden="true">▣</span>
-                    <span>VIP 01</span>
-                  </div>
-                </li>
-                <li class="pixel-map-slot">
-                  <div id="seat-vip-02" class="pixel-seat card bg-black text-center p-3">
-                    <span class="pixel-accent h3 mb-1" aria-hidden="true">▣</span>
-                    <span>VIP 02</span>
-                  </div>
-                </li>
-                <li class="pixel-map-slot">
-                  <div id="seat-vip-03" class="pixel-seat card bg-black text-center p-3">
-                    <span class="pixel-accent h3 mb-1" aria-hidden="true">▣</span>
-                    <span>VIP 03</span>
-                  </div>
-                </li>
-                <li class="pixel-map-slot">
-                  <div id="seat-vip-04" class="pixel-seat card bg-black text-center p-3">
-                    <span class="pixel-accent h3 mb-1" aria-hidden="true">▣</span>
-                    <span>VIP 04</span>
-                  </div>
-                </li>
-                <li class="pixel-map-slot">
-                  <div id="seat-vip-05" class="pixel-seat card bg-black text-center p-3">
-                    <span class="pixel-accent h3 mb-1" aria-hidden="true">▣</span>
-                    <span>VIP 05</span>
-                  </div>
-                </li>
-              </ol>
-              <div class="pixel-map-footer"><span>Hover, focus or tap a station for prices</span><span>5 / 5 DEMO FREE</span></div>
-            </div>
-          </div>
-          <div>
-            <a class="btn btn-outline-light" href="all-locations.html#device-vip">View VIP equipment</a>
-          </div>
-        </section>
-        <div class="d-flex flex-wrap gap-3 mt-4">
-          <a class="btn btn-primary btn-lg" href="all-locations.html#prices">Compare packages</a>
-          <a class="btn btn-outline-light btn-lg" href="all-locations.html#booking">Booking details</a>
-        </div>
         <div id="room-results" aria-live="polite"></div>
         <div id="room-errors" class="is-error is-hidden" role="alert"></div>
       </div>
